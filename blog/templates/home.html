@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<html lang= 'en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Zack's Basic Blog</title>
+
+<body>
+    <h1>All Post</h1>
+    <ul stile="display: flex; flex-flow: column; gap:10px">
+        <li>
+            <div style="border: 1px solid black; width: 100%;">
+                {%for post in posts %}
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.body }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+    
